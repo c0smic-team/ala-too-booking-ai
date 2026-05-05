@@ -29,19 +29,25 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Гостиница Ала-Тоо — Раззаков, Баткен, Кыргызстан" },
+      {
+        name: "description",
+        content:
+          "Гостиница Ала-Тоо в городе Раззаков, Баткен — уютные номера с видом на горы. Бронирование через WhatsApp. Сайт на 4 языках.",
+      },
+      { name: "author", content: "Ala-Too Hotel" },
+      { property: "og:title", content: "Гостиница Ала-Тоо — Раззаков, Баткен" },
+      { property: "og:description", content: "Тёплый горный приём в сердце Баткена. Стандарт, Люкс и Семейный номера." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap",
       },
     ],
   }),
